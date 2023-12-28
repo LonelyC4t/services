@@ -1,0 +1,125 @@
+body {
+   box-sizing: border-box;
+   font-family: "TT Lake reg";
+   margin: 0;
+   padding: 0;
+   background-color: rgba(248, 248, 248, 1);
+   color: rgba(126, 126, 130, 1);
+}
+.button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 62, 121, 1);
+    background: url("image/arrow.svg") center no-repeat;
+    margin-right: 16px;
+}
+.img{
+    margin-left: 16px;
+}
+
+@font-face {
+    font-family: "TT Lake reg";
+    src: url("font/TTLakes-Regular.eot");
+    src: url("font/TTLakes-Regular.ttf");
+    src: url("font/TTLakes-Regular.woff");
+}
+
+@media (width < 768px) {
+    header {
+        min-width: 320px;
+        max-width: 100%;
+    }
+
+    header h1 {
+        min-width: 280px;
+        max-width: 350px;
+        font-size: 16px;
+        font-weight: normal;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 16px;
+    }   
+    .swiper {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .swiper__content{
+        display: flex;
+        max-width: 240px;
+        height: 72px;
+        background-color: rgba(255, 255, 255, 1);
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        border: 1px solid rgba(234, 234, 234, 1);
+    }
+   
+    .swiper-pagination{
+        margin-bottom: 40px;
+    }
+    .main__content {
+        display: none;
+    }
+    
+}
+@media (width > 767px) {
+    .main__content{
+        height: 322px;
+    }
+    header {
+        min-width: 768px;
+    }
+    header h1 {
+        min-width: 338px;
+        font-size: 16px;
+        font-weight: normal;
+        margin-right: auto;
+        margin-left: 16px;
+        margin-top: 16px;
+    }  
+    .main__content--mobile {
+        display: none;
+    }
+    .content__wrapper{
+        min-width: 768px;
+        height: 180px;
+        overflow: hidden;
+        display: flex; 
+        flex-wrap: wrap;
+        margin-left: 24px;
+        margin-top: 40px;
+        transition: 0.8s;
+    }
+    .openMore{
+        height: 280px;
+    }
+    .content__item {
+        display: flex;
+        width: 224px;
+        height: 72px;
+        background-color: rgba(255, 255, 255, 1);
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(234, 234, 234, 1);
+        margin: 16px 24px 0px 0px;
+    }
+    .more {
+        width: 120px;
+        border: none;
+        background-color: rgba(248, 248, 248, 1);
+        font-family: "TT Lake reg";
+        font-weight: bolder;
+        vertical-align: top;
+        margin: 20px 0px 0px 32px;
+        
+    }
+    .more::before {
+        content: url("image/arrowMore.svg");
+        margin-right: 10px;
+    }
+    .more--up::before {
+        content: url("image/arrowUP.svg");
+    }
+}
